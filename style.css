@@ -52,8 +52,6 @@ header > div {
   color: white;
 }
 
-/* LISTE DES ENFANTS */
-
 main > section {
   padding: 1rem;
 }
@@ -151,6 +149,7 @@ footer > p:first-of-type {
   }
 
   main > section.childrens > ul > li {
+    /* le calc() c'est du chipotage. C'est pour que je sois au pixel perfect */
     min-width: calc(100% / 3 - 1.5rem);
     min-height: 20rem;
   }
