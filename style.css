@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  all: unset;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* MOBILE VERSION */
+
+header {
+  background-color: #c86594;
+  padding: 2rem;
+}
+
+header > nav,
+header > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header > nav > img {
+  width: 4rem;
+  margin-bottom: 1rem;
+}
+
+header > nav > ul {
+  display: flex;
+  gap: 2rem;
+  font-weight: 900;
+  color: white;
+}
+
+header > div > img {
+  width: 20rem;
+  margin: 3rem 0;
+}
+
+header > div {
+  text-align: center;
+  color: white;
+}
+
+/* LISTE DES ENFANTS */
+
+main > section {
+  padding: 1rem;
+}
+
+main > section > h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #c86594;
+}
+
+main > section.childrens > ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+main > section.childrens > ul > li {
+  display: flex;
+  min-width: 100%;
+  background-color: #d5e4a1;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 16px;
+}
+
+main > section.childrens > ul > li > img {
+  height: 10rem;
+}
+
+main > section.childrens > ul > li > h3 {
+  margin: 1rem 0;
+}
+
+main > section.childrens > ul > li > button {
+  background-color: #657a7d;
+  color: white;
+  padding: 1rem 4rem;
+  font-weight: 800;
+  cursor: pointer;
+  border-radius: 100px;
+}
+
+main > section.childrens > ul > li > button:hover {
+  background-color: #267079;
+}
+
+main > section.about > p {
+  margin-bottom: 2rem;
+}
+
+footer {
+  background-color: #657a7d;
+  padding: 1rem;
+  text-align: center;
+  font-weight: 600;
+  color: white;
+}
+
+footer > p:first-of-type {
+  margin-bottom: 1rem;
+}
+
+/* DESKTOP VERSION */
+
+@media (min-width: 992px) {
+  header > nav {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  header > div {
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+
+  header > nav > img {
+    margin-bottom: 0;
+  }
+
+  header > div > h1 {
+    max-width: 20ch;
+  }
+
+  main > section.childrens {
+    align-items: center;
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  main > section.childrens > ul {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  main > section.childrens > ul > li {
+    min-width: calc(100% / 3 - 1.5rem);
+    min-height: 20rem;
+  }
+
+  main > section.about > p {
+    width: 64ch;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+}
